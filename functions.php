@@ -6,6 +6,6 @@
 
 
 
-include "blocks/setup.php";
+include "type/setup.php";
 
 
