@@ -27,7 +27,7 @@ add_action( 'init', function () {
       'has_archive'        => false,
       'hierarchical'       => false,
       'menu_position'      => null,
-      'supports'           => array( 'title'),
+      'supports'           => array( 'title', 'excerpt'),
       'public' => true,  // it's not public, it shouldn't have it's own permalink, and so on
       'publicly_queryable' => true,  // you should be able to query it
       'show_ui' => true,  // you should be able to edit it in wp-admin
