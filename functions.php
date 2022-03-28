@@ -11,3 +11,5 @@ include "type/setup.php";
 add_theme_support('post-thumbnails', array(
   'post'
 ));
+
+//test git
