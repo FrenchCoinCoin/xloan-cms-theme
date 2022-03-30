@@ -149,6 +149,26 @@
                     "new_lines": "br"
                 }
             ]
+        },
+        {
+            "key": "field_623d793e441e3",
+            "label": "Cacher dans la liste des clients",
+            "name": "filter_from_search",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -172,5 +192,5 @@
     "graphql_field_name": "clientAttributes",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1648196560
+    "modified": 1648195980
 }

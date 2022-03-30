@@ -678,10 +678,10 @@
                             "new_lines": "br"
                         },
                         {
-                            "key": "field_62331b551637a",
-                            "label": "CTA",
-                            "name": "cta",
-                            "type": "group",
+                            "key": "field_623c84e73a9eb",
+                            "label": "CTAs",
+                            "name": "ctas",
+                            "type": "repeater",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -691,12 +691,16 @@
                                 "id": ""
                             },
                             "show_in_graphql": 1,
-                            "layout": "block",
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
                             "sub_fields": [
                                 {
-                                    "key": "field_62331b551637b",
-                                    "label": "Label",
-                                    "name": "label",
+                                    "key": "field_623c85933b64b",
+                                    "label": "URL",
+                                    "name": "url",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -714,10 +718,10 @@
                                     "maxlength": ""
                                 },
                                 {
-                                    "key": "field_62331b551637c",
-                                    "label": "url",
-                                    "name": "url",
-                                    "type": "url",
+                                    "key": "field_623c859c3b64c",
+                                    "label": "Label",
+                                    "name": "label",
+                                    "type": "text",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -728,7 +732,10 @@
                                     },
                                     "show_in_graphql": 1,
                                     "default_value": "",
-                                    "placeholder": ""
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
                                 }
                             ]
                         },
@@ -781,6 +788,26 @@
                             "mime_types": ""
                         },
                         {
+                            "key": "field_623c85e0a4107",
+                            "label": "L'image déborde?",
+                            "name": "overflowing",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
                             "key": "field_62331b8a1637e",
                             "label": "Texte à droite",
                             "name": "textOnRight",
@@ -816,7 +843,8 @@
                             "show_in_graphql": 1,
                             "choices": {
                                 "white": "Blanc",
-                                "grey": "Gris"
+                                "grey": "Gris",
+                                "blue": "Bleu"
                             },
                             "default_value": false,
                             "allow_null": 0,
@@ -999,6 +1027,31 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_623dde2e57eab",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         }
                     ],
                     "min": "",
@@ -1308,6 +1361,323 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_623c3b7d98fb3": {
+                    "key": "layout_623c3b7d98fb3",
+                    "name": "posts",
+                    "label": "Liste des articles ",
+                    "display": "row",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_623d7905ad29c": {
+                    "key": "layout_623d7905ad29c",
+                    "name": "clients",
+                    "label": "Liste des clients",
+                    "display": "row",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_623c954b798b9": {
+                    "key": "layout_623c954b798b9",
+                    "name": "heroWith2Pictures",
+                    "label": "Hero avec 2 photos",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_623c95bc8aae2",
+                            "label": "Titre riche",
+                            "name": "richtitle",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_623c95ef8aae3",
+                            "label": "Sous titre",
+                            "name": "subtitle",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_623c961a8aae4",
+                            "label": "Image de gauche",
+                            "name": "left_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_623c96358aae5",
+                            "label": "Image de droite",
+                            "name": "right_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_623c965e8aae6",
+                            "label": "Fond",
+                            "name": "background",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_623c965e8aae7",
+                                    "label": "Top",
+                                    "name": "top",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "show_in_graphql": 1,
+                                    "choices": {
+                                        "grey": "Gris",
+                                        "blue": "Bleu",
+                                        "white": "Blanc"
+                                    },
+                                    "default_value": false,
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_623c965e8aae8",
+                                    "label": "Down",
+                                    "name": "down",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "show_in_graphql": 1,
+                                    "choices": {
+                                        "grey": "Gris",
+                                        "blue": "Bleu",
+                                        "white": "Blanc"
+                                    },
+                                    "default_value": false,
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_623c27a3b0b04": {
+                    "key": "layout_623c27a3b0b04",
+                    "name": "herotitle",
+                    "label": "heroTitle",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_623c27afb0b05",
+                            "label": "Titre riche",
+                            "name": "richtitle",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_623c27eab0b06",
+                            "label": "Sous-titre",
+                            "name": "subtitle",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_623d7fe0222a4": {
+                    "key": "layout_623d7fe0222a4",
+                    "name": "job_offers",
+                    "label": "Offres d'emploi",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_623d8029222a6",
+                            "label": "Titre riche",
+                            "name": "richtitle",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_623d802d222a7",
+                            "label": "Sous-titre",
+                            "name": "subtitle",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_623d806c222a8",
+                            "label": "Couleur du fond",
+                            "name": "backgroundColor",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "choices": {
+                                "white": "Blanc",
+                                "grey": "Gris",
+                                "blue": "Bleu"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -1336,5 +1706,5 @@
     "graphql_field_name": "pageContent",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1648196563
+    "modified": 1648221755
 }
